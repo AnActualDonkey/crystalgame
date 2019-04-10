@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="javascript/game.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Crystal Collector</h1>
+    <section id="scorecard">
+        <span>Wins: <span class="win">0</span></span>
+        <span>Losses: <span class="losses">0</span></span>
+        <span>Limit: <span class="limit">0</span></span>
+        <span>Score: <span class="userscore">0</span></span>
+    </section>
+
+    <p id="random"></p>
+
+    <script>
+        document.getElementById("random").innerHTML =
+            Math.floor(Math.random() * 100);
+    </script>
+
+    <img src="images/crystal.jpg" value="10" class="crystal a">
+    <img src="images/crystal.jpg" value="20" class="crystal b">
+    <img src="images/crystal.jpg" value="30" class="crystal c">
+    <img src="images/crystal.jpg" value="40" class="crystal d">
+</body>
